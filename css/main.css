@@ -152,6 +152,8 @@ h6, .h06 {
 p img {
 	margin: 0;
 }
+
+
 p.lead {
 	font-family: "merriweather-light", serif;
 	font-size: 1.8rem;
@@ -399,6 +401,8 @@ img.pull-left {
 .bgrid {
 	padding: 0 20px;
 }
+
+
 @media only screen and (max-width:1024px) {
 	.bgrid {
 		padding: 0 18px;
@@ -1169,6 +1173,12 @@ a.menu-toggle {
 	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#00000000', GradientType=0);  /* IE6-9 */
 }
+
+.pricing-content .pricing-tables .bgrid .img {
+  max-width:50px;
+  max-height:100px;
+}
+
 .intro-content {
 	display: table-cell;
 	vertical-align: middle;
@@ -1654,6 +1664,13 @@ a.menu-toggle {
 	bottom: 0;
 	margin-left: -40px;
 }
+
+
+.pricing-content .price-block .plan-price img {
+  max-width:500px;
+  max-height:500px;
+}
+
 .pricing-content .price-block .plan-price {
 	font-family: "raleway-bold", sans-serif;
 	font-size: 5rem;
@@ -1679,6 +1696,12 @@ a.menu-toggle {
 	padding: 0 5rem;
 	margin-left: auto;
 	margin-right: auto;
+}
+.pricing-content .price-block .img {
+  max-width:400px;
+  max-height:200px;
+  width: auto;
+  height: auto;
 }
 .pricing-content .price-block .button:hover,
 .pricing-content .price-block .button:focus {
