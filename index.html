@@ -1,657 +1,856 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Mala Gupta's personal website &mdash; Website Template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Playfair+Display:400,900" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<!DOCTYPE html><!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>eJavaGuru-Bringing success to you</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="../css/base.css">
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="../css/vendor.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+   <!-- script
+   ================================================== -->
+	<script src="../js/modernizr.js"></script>
 
-    <link rel="stylesheet" href="css/aos.css">
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="../favicon.png">
 
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
-  
+<style type="text/css">
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}
+</style>
 
 
-  <div class="site-wrap">
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: false,
+
+		fixedContentPos: false
+	});
+});
+
+</script>
+
+</head>
+
+<body id="top">
+
+	<!-- header
+   ================================================== -->
+   <header>
+
+   	<div class="row">
+
+	   	<nav id="main-nav-wrap">
+				<ul class="main-navigation">
+                    <!--
+					<li><a class="smoothscroll"  href="../index.html#intro" title="">Home</a></li>
+					<li><a class="smoothscroll"  href="../index.html#certmatters" title="">Cert matters</a></li>
+					<li><a href="http://www.eJavaGuru.com/blog" target="_blank" title="">Blog</a></li>
+					<li class="highlight with-sep"><a href="../freeresources.html" title="">Free Resources</a></li>
+                    -->
+				</ul>
+			</nav>
+
+			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+   	</div>
+
+   </header> <!-- /header -->
+
+
+	<!-- pricing
+   ================================================== -->
+
+   <section id="features">
+
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+   			<h1 width="100%">Java Champion, Author, Speaker</h1>
+   		</div>
+   	</div>
+
+
+    	<div class="row pricing-content">
+         <div class="pricing-tables block-1-2 group">
+
+
+            <div class="bgrid">
+		               <img align="right" src="../images/about/MalaGupta.jpg" height="900" width="600"></img></p>
+
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+
+            <div class="bgrid">
+<p>Mala works as a Developer Advocate with <a href="www.jetbrains.com">JetBrains</a>.
+<p>Founder and lead mentor at eJavaGuru.com, Mala Gupta has been actively supporting Java certification as a path to career advancement. Since 2006, she has been coaching students and professionals to succeed on these certifications.
+
+<p>A sought after speaker and coach, Mala Gupta's Java books with Manning Publications, USA, are top-rated for Oracle Certification around the globe. She has over 20 years of experience in software industry as an author, speaker, mentor, consultant, technology leader and developer. She was recently selected as 'Java Champion' by Oracle Corporation, most prestigious recognition in global Java ecosystem.
+
+<p>She is a speaker at industry conferences like Oracle Code One (San Francisco), DevNexus (Atlanta), JBCN Conference (Spain), JDConf, GIDS, C# Corner, Techfluence, JetBrains Day, Eclipse Day and many more. She has conducted workshops and lectures at leading institutions like IIT Delhi, NSIT Delhi and many more.
+
+<p>Mala has also co-founded KaagZevar.com - a platform for nurturing creativity as an essential life skill.
+
+<p>She co-leads Delhi Java User Group. Director, Women Who Code Delhi, she drives initiatives for diversity advocacy for Women in Technology.
+
+
+			   </div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+         </div> <!-- /pricing-tables -->
+      </div> <!-- /pricing-content -->
+
+
+
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+   			<h1 width="100%">Published Books</h1>
+   		</div>
+   	</div>
+
+
+    	<div class="row pricing-content">
+         <div class="pricing-tables block-1-6 group">
+
+			<!-- ------------------------------- -->
+
+
+           <div align="right" class="bgrid">
+		               <a href="http://www.manning.com/gupta6"><img src="../images/about/OCPJava11Meap.png"></img></a></p>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+
+            <div align="right" class="bgrid">
+		               <a href="http://shop.oreilly.com/product/0636920048824.do"><img src="../images/about/java97.jpg"></img></a></p>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+
+            <div align="right" class="bgrid">
+		               <a href="https://www.packtpub.com/application-development/java-11-quick-start"><img src="../images/about/cover-java-11.jpg"></img></a></p>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+
+
+            <div align="right" class="bgrid">
+		               <a href="http://www.manning.com/gupta3"><img src="../images/about/oca8.jpg"></img></a></p>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+
+            <div align="center" class="bgrid">
+		               <a href="http://www.manning.com/gupta2"><img src="../images/about/ocp7.jpg"></img></a></p>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+
+            <div align="left" class="bgrid">
+		               <a href="http://www.manning.com/gupta"><img src="../images/about/oca7.jpg"></img></a></p>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+         </div> <!-- /pricing-tables -->
+      </div> <!-- /pricing-content -->
+
+
+
+
+
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+   			<h1 width="100%">Talks, Lectures and Seminars</h1>
+   		</div>
+   	</div>
+
+
+
+    	<div class="row pricing-content">
+         <div class="pricing-tables block-1-2 group">
+
+			<!-- ------------------------------- -->
+            <div class="bgrid" span=2>
+				<b>Latest developments in Java</b>
+					<ul>
+						<li>Java 11 - Quick start
+						<li>Java 9, 10, 11 - What the future holds</li>
+						<li>Java 10 - Why you should be excited</li>
+						<li>Oracle's Project Amber - enhancing Java constructs</li>
+						<li>Changing programming paradigms</li>
+						<li>Functional programming in Java</li>
+					</ul>
+
+            </div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+            <div class="bgrid" span=2>
+				<b>Java Programming</b>
+					<ul>
+						<li>OCP Java SE 8 (or 7) Programmer II Certification
+						<li>OCA Java SE 8 (or 7) Programmer I Certification
+						<li>Java Application design - solving real world problems</li>
+						<li>Write right code - basic and advanced</li>
+					</ul>
+				<b>Life Skills</b>
+					<ul>
+						<li>Professional certifications - Touchstone in Technology</li>
+						<li>How to write a book and live forever</li>
+					</ul>
+
+            </div> <!-- /price-block -->
+
+<!-- ------------------------------- -->
+
+             
+             https://www.youtube.com/watch?v=wJ3xxFwncFk
+             
+             https://blogs.oracle.com/javamagazine/pattern-matching-for-instanceof-in-java-14
+             
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://jfuture.dev/"><img src="../images/about/2019-jfuture.jpg"></img></a></p>
+		               <p class="price-month">Keynote on Java</p>
+		               <p class="price-sub-month">JFuture, Minsk, Belarus(Nov, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://twitter.com/Oraclejavamag/status/1187852611761909760"><img src="../images/about/2019-OracleMagazine-TextBlocks.png"></img></a></p>
+		               <p class="price-month">Java Article in Oracle's Java Magazine</p>
+		               <p class="price-sub-month">Oracle Code One, San Francisco(Oct, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.youtube.com/watch?v=j9yJcFiKXJk"><img src="../images/about/2019-OracleCodeOne-Community-keynote.png"></img></a></p>
+		               <p class="price-month">Java Champions Community Keynote at Oracle Code One</p>
+		               <p class="price-sub-month">Oracle Code One, San Francisco(Sep, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.youtube.com/watch?v=bnZDh-3P4FQ"><img src="../images/about/2019-OracleCodeOne-mainkeynote.jfif"  ></img></a></p>
+		               <p class="price-month">Oracle's Keynote at Oracle Code One</p>
+		               <p class="price-sub-month">Oracle Code One, San Francisco(Sep, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.oracle.com/code-one/"><img src="../images/about/2019-OracleCodeOne-sfo.jfif" ></img></a></p>
+		               <p class="price-month">Fun path to Java 11 Developer Certifications</p>
+		               <p class="price-sub-month">Oracle Code One, San Francisco(Sep, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.womenwhocode.com/sf"><img src="../images/about/2019-wwc-sfo-amber.jfif" ></img></a></p>
+		               <p class="price-month">Project Amber in Java</p>
+		               <p class="price-sub-month">Women Who Code, San Francisco(Sep, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://asia.womenwhocode.dev/"><img src="../images/about/2019-wwc-connect-singapore.png" ></img></a></p>
+		               <p class="price-month">Project Amber in Java</p>
+		               <p class="price-sub-month">Women Who Code CONNECT ASIA Conference, Singapore (Aug, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.meetup.com/singajug/events/264101125/"><img src="../images/about/2019-jug-singapore.jfif" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">Java User Group, Singapore(Aug, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="JetBrains.com"><img src="../images/about/jetBrains-Hyd-2019.jpg" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">JetBrains Day, Hyderabad (June, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="JetBrains.com"><img src="../images/about/JetBrainsDelhi-2-2019.jpg" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">JetBrains Day, Delhi (June, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="JetBrains.com"><img src="../images/about/wwcode-bangalore-2019.jpg" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">WWCode Bangalore, VMWare (July, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="JetBrains.com"><img src="../images/about/webinar-jdk12.jpg" ></img></a></p>
+		               <p class="price-month">What's new in JDK 12</p>
+		               <p class="price-sub-month">Webinar with JetBrains (May, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="http://jbcnconf.com/2019"><img src="../images/about/JBCN-2019.jpg" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">JBCN Conference, Barcelona (May, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.meetup.com/SVQJUG/"><img src="../images/about/seville-jug-2019.jpg" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">Seville Java User Group, Spain (May, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://conference.c-sharpcorner.com/"><img src="../images/about/c-sharp-2019.jpg" ></img></a></p>
+		               <p class="price-month">What's new in Java 12</p>
+		               <p class="price-sub-month">C# Corner, New Delhi(Apr, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="techfluence.in/"><img src="../images/about/techfluence-2019.jpg" ></img></a></p>
+		               <p class="price-month">Uncovering Project Amber</p>
+		               <p class="price-sub-month">Techfluence, New Delhi(Mar, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/NSIT-delhi-2019.jpg" ></img></p>
+		               <p class="price-month">Latest features in Java</p>
+		               <p class="price-sub-month">NSIT, New Delhi (Mar, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/NIT-trichy-2019.jpg" ></img></p>
+		               <p class="price-month">Latest changes in Java</p>
+		               <p class="price-sub-month">Pragyan, NIT Trichy, India (Mar, 2019)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+
+
+			<div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="http://eclipsedayindia.mybluemix.net/"><img src="../images/about/banglore-eclipse-day.jpg" ></img></a></p>
+		               <p class="price-month">Java 10, 11 - What the future holds</p>
+		               <p class="price-sub-month">Eclipse Day India, Bangalore (Sep, 2018)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="http://techtriveni.com/" target="_blank"><img src="../images/about/tech-triveni-2018.jpg" ></img></a></p>
+		               <p class="price-month">Java 11 and beyond</p>
+		               <p class="price-sub-month">Tech Triveni (Nov, 2018)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="http://krmangalam.edu.in/"><img src="../images/about/krmangalam1.jpg" ></img></a></p>
+		               <p class="price-month">Changing programming paradigms Workshop</p>
+		               <p class="price-sub-month">K R Mangalam University, Haryana (Sep, 2018)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.jbcnconf.com/2018/"><img src="../images/about/jbcn-actual-2018.jpg" ></img></a></p>
+		               <p class="price-month">Java 9, 10, 11 - What the future holds</p>
+		               <p class="price-sub-month">JBCN Conference, Barcelona, Spain (June, 2018)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">II
+            		<div class="top-part">
+		               <p class="plan-price"><a href="http://http://conference.c-sharpcorner.com/"><img src="../images/about/c-sharp-actual.jpg" ></img></a></p>
+		               <p class="price-month">Java 8, 9, 10 - What the future holds</p>
+		               <p class="price-sub-month">C# Annual Conference (Apr, 2018)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="http://www.techfluence.in"><img src="../images/about/techfluence.jpg" ></img></a></p>
+		               <p class="price-month">Java 8, 9, 10 - What the future holds</p>
+		               <p class="price-sub-month">Techfluence Conference (Mar, 2018)</p>
+	            	</div>
+            	</div>
+			</div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.adobe.com/in/"><img src="../images/about/adobe-touchstone.jpg" ></img></a></p>
+		               <p class="price-month">Professional Certifications - Touchstone in Technology</p>
+		               <p class="price-sub-month">Adobe, Noida (Mar, 2018)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/bvicam-fdp-2018.jpeg" ></img></p>
+		               <p class="price-month">Changing Programming Paradigms & Write a book</p>
+		               <p class="price-sub-month">Faculty Development Program, BVICAM (Jul, 2018)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/manav-rachna.jpg" ></img></p>
+		               <p class="price-month">Latest Java trends & Application design</p>
+		               <p class="price-sub-month">Manav Rachna University (Mar, 2018)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/iit-delhi.jpg" ></img></p>
+		               <p class="price-month">Write a book and live forever</p>
+		               <p class="price-sub-month">Women Entrepreneurship and Empowerment (WEE), IIT Delhi (Sep, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/bharti-vidyapeeth1.jpg" ></img></p>
+		               <p class="price-month">Java Application design - solving real world problems</p>
+		               <p class="price-sub-month">Bharati Vidyapeeth College of Engineering (Sep, 2017)</p>
+
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/igdtu.jpg" ></img></p>
+		               <p class="price-month">Hackathon Judge</p>
+		               <p class="price-sub-month">IG Delhi Technological University (Oct, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/91springboard-writebook.jpg" ></img></p>
+		               <p class="price-month">Write a book and live forever</p>
+		               <p class="price-sub-month">Women Who Code (May, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/bharti-vidyapeeth.jpg" ></img></p>
+		               <p class="price-month">Java Application design - solving real world problems</p>
+		               <p class="price-sub-month">Bharati Vidyapeeth College of Engineering (Sep, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/IIITD-hackathon.jpg" ></img></p>
+		               <p class="price-month">Judge - Hackathon - CodeOff</p>
+		               <p class="price-sub-month">Indraprastha Institute of Information Technology, Delhi (Oct, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/write-a-book-nehruplace.jpg" ></img></p>
+		               <p class="price-month">Write a book and live forever</p>
+		               <p class="price-sub-month">Women Who Code (Jul, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/wwc-adobe.jpg" ></img></p>
+		               <p class="price-month">WWC Director starter Talk</p>
+		               <p class="price-sub-month">Adode, Noida (Mar, 2018)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+
+
+			<!-- ------------------------------- -->
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/delhi-jug-writebook.png" ></img></p>
+		               <p class="price-month">Write a book and live forever</p>
+		               <p class="price-sub-month">Delhi Java user Group (Sep, 2017)</p>
+
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><img src="../images/about/wwc-innov.jpg" ></img></p>
+		               <p class="price-month">Women Who Code - Celebrating Women</p>
+		               <p class="price-sub-month">Panel Member, Women in Tech (Mar, 2017)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+
+            <div class="bgrid">
+            	<div class="price-block">
+            		<div class="top-part">
+		               <p class="plan-price"><a href="https://www.meetup.com/Delhi-NCR-JUG/events/214730772/"><img src="../images/about/delhijug-exception-webinar.png" ></img></a></p>
+		               <p class="price-month">Webinar - Exception handling in Java 7</p>
+		               <p class="price-sub-month">Delhi Java User Group (Nov, 2014)</p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+
+         </div> <!-- /pricing-tables -->
+      </div> <!-- /pricing-content -->
+
+
+   	<div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+   			<h1 width="100%">Invite</h1>
+   		</div>
+   	</div>
+
+    	<div class="row pricing-content">
+         <div class="pricing-tables block-1-3 group">
+
+
+            <div align="center" class="bgrid">
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+
+			<!-- ------------------------------- -->
+            <div align="center" class="bgrid">
+            	<div align="center" class="price-block">
+            		<div align="center" class="top-part">
+		               <p align="center" class="price-month">Email</p>
+		               <p align="center" class="price-month">mala.ejavaguru@gmail.com</p>
+		               <p align="center" class="price-month">to invite Mala Gupta for speaking assignments.<h2></p>
+	            	</div>
+            	</div>
+			   </div> <!-- /price-block -->
+			<!-- ------------------------------- -->
+
+            <div align="center" class="bgrid">
+			   </div> <!-- /price-block -->
+
+
+         </div> <!-- /pricing-tables -->
+      </div> <!-- /pricing-content -->
+
+
+   </section> <!-- /pricing -->
+
+
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	<div class="footer-main">
+
+   		<div class="row">
+
+	      	<div class="col-four tab-full mob-full footer-info">
+
+	            <!-- <div class="footer-logo"></div> -->
+
+	            <p>
+
+		        	info.ejavaguru at gmail.com &nbsp;
+		        	</p>
+
+		      </div> <!-- /footer-info -->
+
+
+<!-- >
+	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+
+
+
+	      		<h4>Site Links</h4>
+
+	      		<ul>
+	      			<li><a href="#">About Us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy Policy</a>
+					</li>
+				</ul>
+
+	      	</div> <!-- /site-links -- >
+
+-->
+
+
+
+	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+
+
+
+	      		<h4>Publications </h4>
+
+	      		<ul>
+	      			<li><a href="http://www.manning.com/gupta3">OCA Java SE 8 Programmer I Cert</a></li>
+	      			<li><a href="http://www.manning.com/gupta2">OCP Java SE 7 Programmer II Cert</a></li>
+	      			<li><a href="http://www.manning.com/gupta">OCA Java SE 7 Programmer I Cert</a></li>
+					</li>
+				</ul>
+
+	      	</div> <!-- /site-links -->
+
+
+
+	      	<div class="col-two tab-1-3 mob-1-2 social-links">
+
+	      		<h4>Social</h4>
+
+	      		<ul>
+	      			<li><a href="http://www.twitter.com/eMalaGupta">Twitter</a></li>
+						<li><a href="http://www.facebook.com/OCAJava8">Facebook - Book 'OCA Java SE 8'</a></li>
+						<li><a href="http://www.facebook.com/OCPJava7">Facebook - Book 'OCP Java SE 7'</a></li>
+						<li><a href="http://www.facebook.com/OCAJava7">Facebook - Book 'OCA Java SE 7'</a></li>
+					</ul>
+
+	      	</div> <!-- /social -->
+
+
+	      	<div class="col-four tab-1-3 mob-full footer-subscribe">
+
+	      		<h4>Subscribe</h4>
+
+	      		<p>Keep yourself updated. Subscribe to our newsletter.</p>
+
+	      		<div class="subscribe-form">
+
+	      			<form id="mc-form" class="group" novalidate="true">
+
+							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required="">
+
+			   			<input type="submit" name="subscribe" >
+
+		   				<label for="mc-email" class="subscribe-message"></label>
+
+						</form>
+
+	      		</div>
+
+	      	</div> <!-- /subscribe -- >
+
+
+
+	      </div> <!-- /row -->
+
+   	</div> <!-- /footer-main -->
+
+
+      <div class="footer-bottom">
+
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© 2016 Copyright eJavaGuru.com</span>
+		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+		         </div>
+
+		         <div id="go-top" style="display: block;">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
+		         </div>
+	      	</div>
+
+      	</div> <!-- /footer-bottom -->
+
       </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-   
-    
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner" >
 
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0">Coach<span class="text-primary">.</span> </a></h1>
-          </div>
+   </footer>
 
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
 
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li class="has-children">
-                  <a href="#about-section" class="nav-link">About</a>
-                  <ul class="dropdown">
-                    <li><a href="#training-section" class="nav-link">Our Training</a></li>
-                    <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
-                    <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
-                    <li><a href="#blog-section" class="nav-link">Blog</a></li>
-                    <li class="has-children">
-                      <a href="#">More Links</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-                
-                <li><a href="#training-section" class="nav-link">Our Training</a></li>
-                <li><a href="#services-section" class="nav-link">Services</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
+<!-- Disable the loading animation
+   <div id="preloader">
+    	<div id="loader"></div>
+   </div>
+-->
 
 
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
-        </div>
-      </div>
-      
-    </header>
+</body>
 
-  
-    <section class="site-blocks-cover overflow-hidden">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 align-self-center">
-
-            <div class="row">
-              <div class="col-lg-11">
-
-                <h1>We are <span class="typed-words"></span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum modiblanditiis error. <a href="#">Contact us</a></p>
-              </div>
-              
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </section> 
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-12" style="margin-top: -7%;">
-            <div class="slide-one-item home-slider owl-carousel">
-              <img src="images/coach_hero_1.jpg" alt="Free Website Template by Free-Templat.co" class="img-fluid img">
-              <img src="images/coach_hero_2.jpg" alt="Free Website Template by Free-Templat.co" class="img-fluid img">
-              <img src="images/coach_hero_3.jpg" alt="Free Website Template by Free-Templat.co" class="img-fluid img">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="about-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-3">
-            <h2 class="text-black">Hey there, I'm John The Founder</h2>
-          </div>
-          <div class="col-md-6 mb-5">
-            <p>Placeholder text here. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-            <p class="mt-5"><img src="images/signature.jpg" alt="Free website template by Free-Template.co" class="img-fluid w-25"></p>
-          </div>
-          <div class="col-md-5 ml-auto">
-            <h2 class="text-black mb-4 h6">Upcmoing Speaking Gigs</h2>
-            <ul class="list-unstyled">
-              <li class="mb-4">
-                <h3 class="text-black m-0">Build Conference</h3>
-                <span class="text-muted">Bristol, UK, 7th June 2019</span>
-              </li>
-              <li class="mb-4">
-                <h3 class="text-black m-0">The Life Conference</h3>
-                <span class="text-muted">London, UK, 19th September 2019</span>
-              </li>
-              <li class="mb-4">
-                <h3 class="text-black m-0">Build Conference</h3>
-                <span class="text-muted">Bristol, UK, 7th June 2019</span>
-              </li>
-              <li class="mb-4">
-                <h3 class="text-black m-0">The Life Conference</h3>
-                <span class="text-muted">London, UK, 19th September 2019</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3 text-left">
-            <img src="images/person_1.jpg" alt="Free Website Template by Free-Template.co" class="rounded-circle img-fluid w-50 mb-4">
-            <h3 class="h4 text-black">Jean</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-          <div class="col-lg-3 text-left">
-            <img src="images/person_2.jpg" alt="Free Website Template by Free-Template.co" class="rounded-circle img-fluid w-50 mb-4">
-            <h3 class="h4 text-black">Rob</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </p>
-
-          </div>
-          <div class="col-lg-3 text-left">
-            <img src="images/person_3.jpg" alt="Free Website Template by Free-Template.co" class="rounded-circle img-fluid w-50 mb-4">
-            <h3 class="h4 text-black">Parker</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-          <div class="col-lg-3 text-left">
-            <img src="images/person_4.jpg" alt="Free Website Template by Free-Template.co" class="rounded-circle img-fluid w-50 mb-4">
-            <h3 class="h4 text-black">Kyle</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <p>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-
-    <section class="site-section bg-light" id="training-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="text-black">Our Training</h2>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-        </div>
-
-        <div class="nonloop-block-13 owl-style owl-carousel">
-          <div class="training">
-            <figure class="mb-4"><img src="images/coach_1_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Life Coach Training</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/coach_2_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Release Your Potential</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/coach_3_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Transforming Lives</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/coach_1_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Life Coach Training</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/coach_2_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Release Your Potential</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="training">
-            <figure class="mb-4"><img src="images/coach_3_sm.jpg" alt="Free website template by Free-Template.co" class="img-fluid"></figure>
-            <h3 class="text-black mb-3">Transforming Lives</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    
-
-
-    <section class="site-section" id="services-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="text-black">Our Services</h2>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-        </div>
-
-        <div class="nonloop-block-13 owl-style owl-style-md owl-carousel">
-          <div class="service">
-            <div class="icon"><span class="flaticon-badge display-1 text-primary"></span></div>
-            <h3 class="text-black mb-3">Life Coach Training</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="service">
-            <div class="icon"><span class="flaticon-target display-1 text-primary"></span></div>
-            <h3 class="text-black mb-3">Release Your Potential</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="service">
-            <div class="icon"><span class="flaticon-agreement display-1 text-primary"></span></div>
-            <h3 class="text-black mb-3">Transforming Lives</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="service">
-            <div class="icon"><span class="flaticon-line-chart display-1 text-primary"></span></div>
-            <h3 class="text-black mb-3">Life Coach Training</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="service">
-
-            <div class="icon"><span class="flaticon-target-1 display-1 text-primary"></span></div>
-            <h3 class="text-black mb-3">Release Your Potential</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-
-          <div class="service">
-            <div class="icon"><span class="flaticon-bar-chart display-1 text-primary"></span></div>
-            <h3 class="text-black mb-3">Transforming Lives</h3>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="site-section" id="gallery-section">
-      <div class="container-fluid">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="text-black">Gallery</h2>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-        </div>
-        
-        <div class="row">
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_1_sm.jpg" data-fancybox="gal"><img src="images/coach_1_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_2_sm.jpg" data-fancybox="gal"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_3_sm.jpg" data-fancybox="gal"><img src="images/coach_3_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_2_sm.jpg" data-fancybox="gal"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_1_sm.jpg" data-fancybox="gal"><img src="images/coach_1_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_2_sm.jpg" data-fancybox="gal"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_1_sm.jpg" data-fancybox="gal"><img src="images/coach_1_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_2_sm.jpg" data-fancybox="gal"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_3_sm.jpg" data-fancybox="gal"><img src="images/coach_3_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_2_sm.jpg" data-fancybox="gal"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_1_sm.jpg" data-fancybox="gal"><img src="images/coach_1_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-          
-            <a class="col-6 col-md-6 col-lg-4 col-xl-3 gal-item d-block" data-aos="fade-up" data-aos-delay="100" href="images/coach_2_sm.jpg" data-fancybox="gal"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
-
-        </div>
-      </div>
-    </section>
-
-
-    <section class="site-section" id="testimonials-section" data-aos="fade">
-      <div class="container">
-        
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center mb-5">
-            <h2 class="text-black mb-2">Happy Customers</h2>
-          </div>
-        </div>
-        <div  data-aos="fade-up" data-aos-delay="200">
-          <div class="owl-carousel owl-style owl-carousel-one no-owl-nav">
-            <div>
-              <div class="block-testimony-1 text-center">
-                
-                <blockquote class="mb-4">
-                  <p>&ldquo;The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 text-black">Ricky Fisher</h3>
-              </div>
-            </div>
-
-            <div>
-              <div class="block-testimony-1 text-center">
-
-                
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 mb-4 text-black">Ken Davis</h3>
-
-                
-              </div>
-            </div>
-
-            <div>
-              <div class="block-testimony-1 text-center">
-                
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 text-black">Mellisa Griffin</h3>
-
-                
-              </div>
-            </div>
-
-            <div>
-              <div class="block-testimony-1 text-center">
-
-
-                <blockquote class="mb-4">
-                  <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
-                </blockquote>
-
-                <figure>
-                  <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">
-                </figure>
-                <h3 class="font-size-20 mb-4 text-black">Robert Steward</h3>
-
-                
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" id="blog-section">
-      <div class="container">
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 text-center mb-5">
-            
-            <h2 class="text-black mb-2">Our Blog</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/coach_1_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid rounded"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">Unleash Your Potential With These 5 Tips</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="100">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid rounded"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">Unleash Your Potential With These 5 Tips</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/coach_3_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid rounded"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">Unleash Your Potential With These 5 Tips</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-4" data-aos="fade-up"  data-aos-delay="100">
-            <div class="d-lg-flex blog-entry">
-              <figure class="mr-4">
-                <a href="single.html"><img src="images/coach_2_sm.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid rounded"></a>
-              </figure>
-              <div class="blog-entry-text">
-                <h3><a href="single.html">Unleash Your Potential With These 5 Tips</a></h3>
-                <span class="post-meta mb-3 d-block">April 17, 2019</span>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                <p><a href="#" class="">Read More..</a></p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <div class="site-section bg-light" id="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <h2 class="text-black">Contact Us</h2>
-          </div>
-        </div>
-        <div class="row mb-5">
-          <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
-            <p class="mb-0 font-weight-bold">Address</p>
-            <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA
-          </div>
-          <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
-            <p class="mb-0 font-weight-bold">Phone</p>
-            <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-          </div>
-          <div class="mb-4 mb-lg-0 col-md-6 col-lg-4">
-            <p class="mb-0 font-weight-bold">Email Address</p>
-            <p class="mb-0"><a href="#">youremail@domain.com</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 mb-5">
-            <form action="#" method="post">
-              <div class="form-group row">
-                <div class="col-md-6 mb-3 mb-md-0">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email address">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-6 mr-auto">
-                  <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message">
-                </div>
-              </div>
-            </form>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-    
-    
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h2 class="footer-heading mb-4">About Us</h2>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-          </div>
-
-
-          <div class="col-md-3 ml-auto">
-            <h2 class="footer-heading mb-4">Quick Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="#about-section" class="smoothscroll">About Us</a></li>
-              <li><a href="#training-section" class="smoothscroll">Our Training</a></li>
-              <li><a href="#services-section" class="smoothscroll">Services</a></li>
-              <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
-              <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-4">
-            <div class="mb-5">
-              <h2 class="footer-heading mb-4">Follow Us</h2>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </div>
-
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form action="#" method="post" class="footer-subscribe">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
-                </div>
-              </div>
-            </form>
-
-          </div>
-        </div>
-
-        <div class="row pt-5 mt-5 text-left">
-          <div class="col-md-12">
-            <div class="border-top pt-5">
-              <p class="copyright"><small>
-              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></small></p>
-        
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-    </footer>
-
-  </div> <!-- .site-wrap -->
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/isotope.pkgd.min.js"></script>
-  
-  <script src="js/typed.js"></script>
-            <script>
-            var typed = new Typed('.typed-words', {
-            strings: ["Motivational Speakers","Professional Speakers","Business Speakers", "Professional Life Coach"],
-            typeSpeed: 80,
-            backSpeed: 80,
-            backDelay: 4000,
-            startDelay: 1000,
-            loop: true,
-            showCursor: true
-            });
-            </script>
-  
-  <script src="js/main.js"></script>
-
-  </body>
 </html>
