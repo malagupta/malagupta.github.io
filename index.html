@@ -1,1058 +1,425 @@
-<!DOCTYPE html><!--[if IE 8 ]>
-<html class="no-js oldie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]>
-<html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>eJavaGuru-Bringing success to you</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- CSS
-  ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/vendor.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-
-    <!-- favicons
-     ================================================== -->
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <style type="text/css">
-        .mfp-fade.mfp-bg {
-            opacity: 0;
-            -webkit-transition: all 0.15s ease-out;
-            -moz-transition: all 0.15s ease-out;
-            transition: all 0.15s ease-out;
-        }
-
-        .mfp-fade.mfp-bg.mfp-ready {
-            opacity: 0.8;
-        }
-
-        .mfp-fade.mfp-bg.mfp-removing {
-            opacity: 0;
-        }
-
-        .mfp-fade.mfp-wrap .mfp-content {
-            opacity: 0;
-            -webkit-transition: all 0.15s ease-out;
-            -moz-transition: all 0.15s ease-out;
-            transition: all 0.15s ease-out;
-        }
-
-        .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-            opacity: 1;
-        }
-
-        .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-            opacity: 0;
-        }
-    </style>
-
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-            $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-                disableOn: 700,
-                type: 'iframe',
-                mainClass: 'mfp-fade',
-                removalDelay: 160,
-                preloader: false,
-
-                fixedContentPos: false
-            });
-        });
-
-    </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mala Gupta — Java Champion · Author · Developer Advocate</title>
+  <meta name="description" content="Mala Gupta — Java Champion, Developer Advocate at JetBrains, Author, Speaker and Mentor.">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/modern.css">
 </head>
+<body>
 
-<body id="top">
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">Mala<span>Gupta</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#books">Books</a>
+      <a href="#talks">Talks</a>
+      <a href="#blog">Blog</a>
+      <a href="#conferences">Conferences</a>
+      <a href="#livestreams">Live Streams</a>
+      <a href="#technologygrit">TechnologyGrit</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-<!-- header
-================================================== -->
-<header>
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="section-label">Developer Advocate at JetBrains</span>
+      <h1>Mala<br><span class="highlight">Gupta</span></h1>
+      <p class="hero-tagline">Java Champion · Author · Speaker · Mentor</p>
+      <p class="hero-desc">
+        Founder of <a href="http://www.eJavaGuru.com">eJavaGuru.com</a> and Developer Advocate at JetBrains.
+        20+ years empowering developers through books, talks, certification coaching, and community leadership.
+        Oracle Java Champion and Director of Women Who Code Delhi.
+      </p>
+      <div class="hero-badges">
+        <span class="badge badge-purple">Java Champion</span>
+        <span class="badge badge-blue">JetBrains Advocate</span>
+        <span class="badge badge-green">6× Author</span>
+        <span class="badge badge-orange">WWCode Director</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#talks" class="btn btn-primary">View My Talks</a>
+        <a href="#contact" class="btn btn-outline">Invite to Speak</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/about/MalaGupta.jpg" alt="Mala Gupta — Java Champion and Developer Advocate">
+    </div>
+  </div>
+</section>
 
-    <div class="row">
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">About</span>
+      <h2>Bridging Java &amp; Community</h2>
+      <p>
+        Mala works as a Developer Advocate at <a href="https://www.jetbrains.com">JetBrains</a>.
+        Founder and lead mentor at <a href="http://www.eJavaGuru.com">eJavaGuru.com</a>, she has been coaching students
+        and professionals to succeed in Java certification since 2006. A sought-after speaker at conferences like
+        Oracle Code One, QCon, DevNexus, and JBCN, she holds over 20 years of experience as an author, mentor,
+        consultant, technology leader and developer. She co-leads the Delhi Java User Group and
+        co-founded <a href="http://www.kaagzevar.com">KaagZevar.com</a>.
+      </p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">20+</div><div class="stat-label">Years in Software</div></div>
+      <div class="stat-card"><div class="stat-num">6</div><div class="stat-label">Published Books</div></div>
+      <div class="stat-card"><div class="stat-num">50+</div><div class="stat-label">Conference Talks</div></div>
+      <div class="stat-card"><div class="stat-num">17+</div><div class="stat-label">Years of Coaching</div></div>
+      <div class="stat-card"><div class="stat-num">∞</div><div class="stat-label">Passion for Java</div></div>
+    </div>
+  </div>
+</section>
 
-        <nav id="main-nav-wrap">
-            <ul class="main-navigation">
-                <!--
-                <li><a class="smoothscroll"  href="../index.html#intro" title="">Home</a></li>
-                <li><a class="smoothscroll"  href="../index.html#certmatters" title="">Cert matters</a></li>
-                <li><a href="http://www.eJavaGuru.com/blog" target="_blank" title="">Blog</a></li>
-                <li class="highlight with-sep"><a href="../freeresources.html" title="">Free Resources</a></li>
-                -->
-            </ul>
-        </nav>
+<!-- ===== BOOKS ===== -->
+<section id="books" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Publications</span>
+      <h2>Published Books</h2>
+      <p>Top-rated globally for Oracle Java Certification, published by Manning Publications, O'Reilly, and Packt.</p>
+    </div>
+    <div class="books-grid">
+      <div class="book-item"><a href="http://www.manning.com/gupta6" target="_blank"><img src="images/about/OCPJava11Meap.png" alt="OCP Java SE 11"></a></div>
+      <div class="book-item"><a href="http://shop.oreilly.com/product/0636920048824.do" target="_blank"><img src="images/about/java97.jpg" alt="Java 9 for Programmers"></a></div>
+      <div class="book-item"><a href="https://www.packtpub.com/application-development/java-11-quick-start" target="_blank"><img src="images/about/cover-java-11.jpg" alt="Java 11 Quick Start"></a></div>
+      <div class="book-item"><a href="http://www.manning.com/gupta3" target="_blank"><img src="images/about/oca8.jpg" alt="OCA Java SE 8"></a></div>
+      <div class="book-item"><a href="http://www.manning.com/gupta2" target="_blank"><img src="images/about/ocp7.jpg" alt="OCP Java SE 7"></a></div>
+      <div class="book-item"><a href="http://www.manning.com/gupta" target="_blank"><img src="images/about/oca7.jpg" alt="OCA Java SE 7"></a></div>
+    </div>
+  </div>
+</section>
 
-        <a class="menu-toggle" href="#"><span>Menu</span></a>
-
+<!-- ===== TALKS ===== -->
+<section id="talks" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Speaking</span>
+      <h2>Talks, Lectures &amp; Seminars</h2>
+      <p>A regular speaker at international conferences, JUGs, universities, and corporate events worldwide.</p>
     </div>
 
-</header> <!-- /header -->
+    <div class="topic-grid">
+      <div class="topic-card">
+        <h3>Latest Developments in Java</h3>
+        <ul>
+          <li>Java 16 language features</li>
+          <li>Keeping pace with what's new in Java</li>
+          <li>Streams API in Java</li>
+          <li>Uncovering Project Amber</li>
+          <li>Java 9, 10, 11 — What the future holds</li>
+          <li>Functional programming in Java</li>
+          <li>Changing programming paradigms</li>
+        </ul>
+      </div>
+      <div class="topic-card">
+        <h3>Java Programming &amp; Life Skills</h3>
+        <ul>
+          <li>OCP / OCA Java SE Certification</li>
+          <li>Java Application Design</li>
+          <li>Write right code — basic and advanced</li>
+          <li>Professional certifications — Touchstone in Technology</li>
+          <li>How to write a book and live forever</li>
+        </ul>
+      </div>
+    </div>
 
+    <div class="grid-3">
+      <div class="card"><div class="card-image"><a href="https://snowone.ru/en/speakers/mala_gupta" target="_blank"><img src="images/about/2021/snowone2021.jpg" alt="Snowone 2021"></a></div><div class="card-body"><div class="card-tag">2021</div><div class="card-title">Keeping Pace with What's New in Java</div><div class="card-subtitle">Snowone Conference, Siberia</div><div class="card-date">Feb 2021</div></div></div>
 
-<!-- pricing
-================================================== -->
+      <div class="card"><div class="card-image"><a href="https://www.youtube.com/channel/UC4ogdcPcIAOOMJktgBMhQnQ/" target="_blank"><img src="images/about/2021/intellijideaconf2021.jpg" alt="IntelliJ IDEA Conf 2021"></a></div><div class="card-body"><div class="card-tag">2021</div><div class="card-title">Keeping Pace with the Newer Java Versions</div><div class="card-subtitle">IntelliJ IDEA Conf</div><div class="card-date">Feb 2021</div></div></div>
 
-<section id="features">
+      <div class="card"><div class="card-image"><a href="https://www.youtube.com/watch?v=RXUYPatbZc0" target="_blank"><img src="images/about/2021/devnexus2021.jpg" alt="Devnexus 2021"></a></div><div class="card-body"><div class="card-tag">2021</div><div class="card-title">Java 16 Language Features</div><div class="card-subtitle">Devnexus, Atlanta</div><div class="card-date">Feb 2021</div></div></div>
 
+      <div class="card"><div class="card-image"><a href="https://freecontent.manning.com/manning-on-twitch-calendar-live-author-appearances/" target="_blank"><img src="images/about/2021/streamsapijava2021.png" alt="Streams API in Java"></a></div><div class="card-body"><div class="card-tag">2021</div><div class="card-title">Streams API in Java</div><div class="card-subtitle">Manning Publications, Twitch</div><div class="card-date">Feb 2021</div></div></div>
 
-    <div class="row section-intro">
-        <div class="col-twelve with-bottom-line">
-            <h1 width="100%">Java Champion, Author, Speaker</h1>
+      <div class="card"><div class="card-image"><a href="https://www.youtube.com/watch?v=wJ3xxFwncFk" target="_blank"><img src="images/about/2020/java-25-anni-video.png" alt="Java 25th Anniversary"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Java's 25th Anniversary Video</div><div class="card-subtitle">Oracle</div><div class="card-date">May 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://twitter.com/QCon/status/1328802654483582979" target="_blank"><img src="images/about/2020/QConPlus.jpg" alt="QCon Plus 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Sustaining and Growing an Active Community</div><div class="card-subtitle">QCon Plus</div><div class="card-date">Nov 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://jdconf.splashthat.com" target="_blank"><img src="images/about/2020/jdconf.png" alt="JDConf 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Communities — Keynote on Day 3</div><div class="card-subtitle">JDConf, Microsoft's first Java Conf</div><div class="card-date">Oct 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.youtube.com/watch?v=z0XFtiZr9WI" target="_blank"><img src="images/about/2020/virtualjug.jpg" alt="Virtual JUG 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Keeping Pace with Java 14 and 15</div><div class="card-subtitle">Virtual JUG</div><div class="card-date">Aug 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://twitter.com/DevTalksRo/status/1306905834891423748" target="_blank"><img src="images/about/2020/devcon.jpg" alt="DevCon 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Java's New Language Features</div><div class="card-subtitle">DevCon Conference</div><div class="card-date">Sep 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://manningbooks.medium.com/women-in-tech-conference-db9731a0fc0e" target="_blank"><img src="images/about/2020/ManningWomenInTechConference.jpg" alt="Manning Women in Tech"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Java's New Language Features</div><div class="card-subtitle">Manning's Women in Tech Conference</div><div class="card-date">Oct 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.meetup.com/SouJavaBrasilia/events/273640028/" target="_blank"><img src="images/about/2020/soujava.png" alt="SouJava 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">What's New in Java 15</div><div class="card-subtitle">SouJava</div><div class="card-date">Oct 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.meetup.com/bangalorejug/events/xmxsxrybcmbjc/" target="_blank"><img src="images/about/2020/jugbangalore.png" alt="JUG Bangalore 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">What's New in Java 15</div><div class="card-subtitle">JUG Bangalore</div><div class="card-date">Sep 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.facebook.com/watch/live/?v=413288486738459" target="_blank"><img src="images/about/2020/timestechieswebinar.png" alt="Times Techies 2020"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Careers in Java — 25 Years of the Language</div><div class="card-subtitle">Times Techies, Times of India</div><div class="card-date">Oct 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://blogs.oracle.com/javamagazine/pattern-matching-for-instanceof-in-java-14" target="_blank"><img src="images/about/2020/pattern-matching-ins.png" alt="Pattern Matching Article"></a></div><div class="card-body"><div class="card-tag">2020</div><div class="card-title">Article on Pattern Matching for instanceof</div><div class="card-subtitle">Java Magazine</div><div class="card-date">May 2020</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://jfuture.dev/" target="_blank"><img src="images/about/2019-jfuture.jpg" alt="JFuture 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Keynote on Java</div><div class="card-subtitle">JFuture, Minsk, Belarus</div><div class="card-date">Nov 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.youtube.com/watch?v=j9yJcFiKXJk" target="_blank"><img src="images/about/2019-OracleCodeOne-Community-keynote.png" alt="Oracle Code One Community Keynote 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Java Champions Community Keynote</div><div class="card-subtitle">Oracle Code One, San Francisco</div><div class="card-date">Sep 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.oracle.com/code-one/" target="_blank"><img src="images/about/2019-OracleCodeOne-sfo.jfif" alt="Oracle Code One 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Fun Path to Java 11 Developer Certifications</div><div class="card-subtitle">Oracle Code One, San Francisco</div><div class="card-date">Sep 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://asia.womenwhocode.dev/" target="_blank"><img src="images/about/2019-wwc-connect-singapore.png" alt="WWCode CONNECT ASIA 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Project Amber in Java</div><div class="card-subtitle">Women Who Code CONNECT ASIA, Singapore</div><div class="card-date">Aug 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.meetup.com/singajug/events/264101125/" target="_blank"><img src="images/about/2019-jug-singapore.jfif" alt="JUG Singapore 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Uncovering Project Amber</div><div class="card-subtitle">Java User Group, Singapore</div><div class="card-date">Aug 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><img src="images/about/webinar-jdk12.jpg" alt="JDK 12 Webinar"></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">What's New in JDK 12</div><div class="card-subtitle">Webinar with JetBrains</div><div class="card-date">May 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="http://jbcnconf.com/2019" target="_blank"><img src="images/about/JBCN-2019.jpg" alt="JBCN 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Uncovering Project Amber</div><div class="card-subtitle">JBCN Conference, Barcelona</div><div class="card-date">May 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://conference.c-sharpcorner.com/" target="_blank"><img src="images/about/c-sharp-2019.jpg" alt="C# Corner 2019"></a></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">What's New in Java 12</div><div class="card-subtitle">C# Corner, New Delhi</div><div class="card-date">Apr 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><img src="images/about/NSIT-delhi-2019.jpg" alt="NSIT Delhi 2019"></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Latest Features in Java</div><div class="card-subtitle">NSIT, New Delhi</div><div class="card-date">Mar 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><img src="images/about/NIT-trichy-2019.jpg" alt="NIT Trichy 2019"></div><div class="card-body"><div class="card-tag">2019</div><div class="card-title">Latest Changes in Java</div><div class="card-subtitle">Pragyan, NIT Trichy, India</div><div class="card-date">Mar 2019</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.jbcnconf.com/2018/" target="_blank"><img src="images/about/jbcn-actual-2018.jpg" alt="JBCN 2018"></a></div><div class="card-body"><div class="card-tag">2018</div><div class="card-title">Java 9, 10, 11 — What the Future Holds</div><div class="card-subtitle">JBCN Conference, Barcelona, Spain</div><div class="card-date">Jun 2018</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="http://eclipsedayindia.mybluemix.net/" target="_blank"><img src="images/about/banglore-eclipse-day.jpg" alt="Eclipse Day India 2018"></a></div><div class="card-body"><div class="card-tag">2018</div><div class="card-title">Java 10, 11 — What the Future Holds</div><div class="card-subtitle">Eclipse Day India, Bangalore</div><div class="card-date">Sep 2018</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="http://techtriveni.com/" target="_blank"><img src="images/about/tech-triveni-2018.jpg" alt="Tech Triveni 2018"></a></div><div class="card-body"><div class="card-tag">2018</div><div class="card-title">Java 11 and Beyond</div><div class="card-subtitle">Tech Triveni</div><div class="card-date">Nov 2018</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.adobe.com/in/" target="_blank"><img src="images/about/adobe-touchstone.jpg" alt="Adobe 2018"></a></div><div class="card-body"><div class="card-tag">2018</div><div class="card-title">Professional Certifications — Touchstone in Technology</div><div class="card-subtitle">Adobe, Noida</div><div class="card-date">Mar 2018</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="http://krmangalam.edu.in/" target="_blank"><img src="images/about/krmangalam1.jpg" alt="K R Mangalam 2018"></a></div><div class="card-body"><div class="card-tag">2018</div><div class="card-title">Changing Programming Paradigms Workshop</div><div class="card-subtitle">K R Mangalam University, Haryana</div><div class="card-date">Sep 2018</div></div></div>
+
+      <div class="card"><div class="card-image"><img src="images/about/iit-delhi.jpg" alt="IIT Delhi 2017"></div><div class="card-body"><div class="card-tag">2017</div><div class="card-title">Write a Book and Live Forever</div><div class="card-subtitle">Women Entrepreneurship &amp; Empowerment, IIT Delhi</div><div class="card-date">Sep 2017</div></div></div>
+
+      <div class="card"><div class="card-image"><img src="images/about/bharti-vidyapeeth1.jpg" alt="Bharati Vidyapeeth 2017"></div><div class="card-body"><div class="card-tag">2017</div><div class="card-title">Java Application Design — Solving Real World Problems</div><div class="card-subtitle">Bharati Vidyapeeth College of Engineering</div><div class="card-date">Sep 2017</div></div></div>
+
+      <div class="card"><div class="card-image"><img src="images/about/wwc-innov.jpg" alt="Women Who Code 2017"></div><div class="card-body"><div class="card-tag">2017</div><div class="card-title">Celebrating Women — Panel Member</div><div class="card-subtitle">Women Who Code</div><div class="card-date">Mar 2017</div></div></div>
+
+      <div class="card"><div class="card-image"><a href="https://www.meetup.com/Delhi-NCR-JUG/events/214730772/" target="_blank"><img src="images/about/delhijug-exception-webinar.png" alt="Delhi JUG 2014"></a></div><div class="card-body"><div class="card-tag">2014</div><div class="card-title">Webinar — Exception Handling in Java 7</div><div class="card-subtitle">Delhi Java User Group</div><div class="card-date">Nov 2014</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BLOG POSTS ===== -->
+<section id="blog" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Writing</span>
+      <h2>Blog Posts &amp; Articles</h2>
+      <p>Technical articles, tutorials, and insights on Java, certification, and the developer community.</p>
+    </div>
+    <div class="blog-list">
+      <a href="https://blogs.oracle.com/javamagazine/pattern-matching-for-instanceof-in-java-14" target="_blank" class="blog-item">
+        <div class="blog-icon">📝</div>
+        <div>
+          <div class="blog-item-title">Pattern Matching for instanceof in Java 14</div>
+          <div class="blog-item-meta"><span>Java Magazine · Oracle</span><span>May 2020</span></div>
         </div>
-    </div>
-
-
-    <div class="row pricing-content">
-        <div class="pricing-tables block-1-2 group">
-
-
-            <div class="bgrid">
-                <img align="right" src="images/about/MalaGupta.jpg" height="900" width="600" alt="Mala Gupta"/></p>
-
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-
-            <div class="bgrid">
-                <p>Mala works as a Developer Advocate with <a href="http://www.jetbrains.com">JetBrains</a>.
-                <p>Founder and lead mentor at eJavaGuru.com, Mala Gupta has been actively supporting Java certification as a path to career advancement. Since 2006, she has been coaching students and professionals to
-                    succeed on these certifications.
-
-                <p>A sought after speaker and coach, Mala Gupta's Java books with Manning Publications, USA, are top-rated for Oracle Certification around the globe. She has over 20 years of experience in software
-                    industry as an author, speaker, mentor, consultant, technology leader and developer. She was recently selected as 'Java Champion' by Oracle Corporation, most prestigious recognition in global Java
-                    ecosystem.
-
-                <p>She is a speaker at industry conferences like Oracle Code One (San Francisco), DevNexus (Atlanta), JBCN Conference (Spain), JDConf, GIDS, C# Corner, Techfluence, JetBrains Day, Eclipse Day and many
-                    more. She has conducted workshops and lectures at leading institutions like IIT Delhi, NSIT Delhi and many more.
-
-                <p>Mala has also co-founded <a href="http://www.kaagzevar.com">KaagZevar.com</a> - a platform for nurturing creativity as an essential life skill.
-
-                <p>She co-leads Delhi Java User Group. Director, Women Who Code Delhi, she drives initiatives for diversity advocacy for Women in Technology.
-
-
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-        </div> <!-- /pricing-tables -->
-    </div> <!-- /pricing-content -->
-
-
-    <div class="row section-intro">
-        <div class="col-twelve with-bottom-line">
-            <h1 width="100%">Published Books</h1>
+      </a>
+      <a href="https://timesofindia.indiatimes.com/india/25-and-still-going-strong-java-proves-its-obit-writers-wrong/articleshow/76852641.cms" target="_blank" class="blog-item">
+        <div class="blog-icon">📰</div>
+        <div>
+          <div class="blog-item-title">25 and Still Going Strong — Java Proves Its Obit Writers Wrong</div>
+          <div class="blog-item-meta"><span>Times of India</span><span>Jul 2020</span></div>
         </div>
-    </div>
-
-
-    <div class="row pricing-content">
-        <div class="pricing-tables block-1-6 group">
-
-            <!-- ------------------------------- -->
-
-
-            <div align="right" class="bgrid">
-                <a href="http://www.manning.com/gupta6"><img src="images/about/OCPJava11Meap.png"/></a>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-
-            <div align="right" class="bgrid">
-                <a href="http://shop.oreilly.com/product/0636920048824.do"><img src="images/about/java97.jpg"/></a></p>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-
-            <div align="right" class="bgrid">
-                <a href="https://www.packtpub.com/application-development/java-11-quick-start"><img src="images/about/cover-java-11.jpg" img></a></p>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-
-
-            <div align="right" class="bgrid">
-                <a href="http://www.manning.com/gupta3"><img src="images/about/oca8.jpg" alt="OCA Java SE 8 Programmer I Certification"/></a></p>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-
-            <div align="center" class="bgrid">
-                <a href="http://www.manning.com/gupta2"><img src="images/about/ocp7.jpg"/></a></p>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-
-            <div align="left" class="bgrid">
-                <a href="http://www.manning.com/gupta"><img src="images/about/oca7.jpg"></img></a>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-        </div> <!-- /pricing-tables -->
-    </div> <!-- /pricing-content -->
-
-
-    <div class="row section-intro">
-        <div class="col-twelve with-bottom-line">
-            <h1 width="100%">Talks, Lectures and Seminars</h1>
+      </a>
+      <a href="https://content.techgig.com/techgig-inaugural-podcast-with-oracle-how-java-communities-accelerate-knowledge-sharing/articleshow/79793383.cms" target="_blank" class="blog-item">
+        <div class="blog-icon">🎙️</div>
+        <div>
+          <div class="blog-item-title">Podcast: How Java Communities Accelerate Knowledge Sharing</div>
+          <div class="blog-item-meta"><span>TechGig · Times Internet</span><span>Dec 2020</span></div>
         </div>
-    </div>
-
-
-    <div class="row pricing-content">
-        <div class="pricing-tables block-1-2 group">
-
-            <!-- ------------------------------- -->
-            <div class="bgrid" span=2>
-                <b>Latest developments in Java</b>
-                <ul>
-                    <li>Java 16 language features</li>
-                    <li>Keeping pace with what's new in Java</li>
-                    <li>Streams API in Java</li>
-                    <li>7 Latest language changes every Java developer should know</li>
-                    <li>Java 14 and 15</li>
-                    <li>Java 9, 10, 11 - What the future holds</li>
-                    <li>Uncovering Project Amber - enhancing Java constructs</li>
-                    <li>Changing programming paradigms</li>
-                    <li>Functional programming in Java</li>
-                </ul>
-
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-            <div class="bgrid" span=2>
-                <b>Java Programming</b>
-                <ul>
-                    <li>OCP Java SE 8 (or 7) Programmer II Certification
-                    <li>OCA Java SE 8 (or 7) Programmer I Certification
-                    <li>Java Application design - solving real world problems</li>
-                    <li>Write right code - basic and advanced</li>
-                </ul>
-                <b>Life Skills</b>
-                <ul>
-                    <li>Professional certifications - Touchstone in Technology</li>
-                    <li>How to write a book and live forever</li>
-                </ul>
-
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://snowone.ru/en/speakers/mala_gupta"><img src="images/about/2021/snowone2021.jpg"/></a></p>
-                        <p class="price-month">Keeping Pace with What's New in Java</p>
-                        <p class="price-sub-month">Snowone Conference, Siberia(Feb, 2021)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.youtube.com/channel/UC4ogdcPcIAOOMJktgBMhQnQ/"><img src="images/about/2021/intellijideaconf2021.jpg"/></a></p>
-                        <p class="price-month">Keeping Pace with the newer Java versions</p>
-                        <p class="price-sub-month">IntelliJ IDEA Conf (Feb, 2021)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.youtube.com/watch?v=RXUYPatbZc0"><img src="images/about/2021/devnexus2021.jpg"/></a></p>
-                        <p class="price-month">Java 16 language features</p>
-                        <p class="price-sub-month">Devnexus, Atlanta (Feb, 2021)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.youtube.com/watch?v=wJ3xxFwncFk"><img src="images/about/2020/java-25-anni-video.png"/></a></p>
-                        <p class="price-month">Java's 25 anniversary video</p>
-                        <p class="price-sub-month">Oracle (May, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://freecontent.manning.com/manning-on-twitch-calendar-live-author-appearances/"><img src="images/about/2021/streamsapijava2021.png"/></a></p>
-                        <p class="price-month">Streams API in Java</p>
-                        <p class="price-sub-month">Manning Publications, Twitch (Feb, 2021)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://content.techgig.com/techgig-inaugural-podcast-with-oracle-how-java-communities-accelerate-knowledge-sharing/articleshow/79793383.cms"><img
-                                src="images/about/2020/techgigsharat.png"/></a></p>
-                        <p class="price-month">Podcast on Java Communities</p>
-                        <p class="price-sub-month">TechGig, Times Internet (Dec, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.facebook.com/watch/?v=486407995661643"><img
-                                src="images/about/2020/manning-twitch-dec.png"/></a></p>
-                        <p class="price-month">Latest language features in Java</p>
-                        <p class="price-sub-month">Manning Publications (Dec, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://twitter.com/QCon/status/1328802654483582979"><img src="images/about/2020/QConPlus.jpg"/></a></p>
-                        <p class="price-month">Sustaining and growing an active community in a mature platform</p>
-                        <p class="price-sub-month">QCon Plus (Nov 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://twitter.com/DevTalksRo/status/1306905834891423748"><img
-                                src="images/about/2020/devcon.jpg"/></a></p>
-                        <p class="price-month">Java's new language features</p>
-                        <p class="price-sub-month">DevCon Conference (Sep 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://manningbooks.medium.com/women-in-tech-conference-db9731a0fc0e"><img
-                                src="images/about/2020/ManningWomenInTechConference.jpg"/></a></p>
-                        <p class="price-month">Java's new language features</p>
-                        <p class="price-sub-month">Manning's Women in tech Conference (Oct 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.techgig.com/webinar/amp/Happy-Birthday-Java-25-ways-that-will-brighten-the-future-1917"><img
-                                src="images/about/2020/25-java-sharat-techgig.jpg"/></a></p>
-                        <p class="price-month">Java and Communities (Right after Sharat's session)</p>
-                        <p class="price-sub-month">TechGig, Times Internet (Dec, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.meetup.com/SouJavaBrasilia/events/273640028/"><img
-                                src="images/about/2020/soujava.png"/></a></p>
-                        <p class="price-month">What's new in Java 15</p>
-                        <p class="price-sub-month">SouJava (Oct, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.meetup.com/bangalorejug/events/xmxsxrybcmbjc/"><img
-                                src="images/about/2020/jugbangalore.png"/></a></p>
-                        <p class="price-month">What's new in Java 15</p>
-                        <p class="price-sub-month">JUG Bangalore (Sep, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.facebook.com/watch/live/?v=413288486738459&ref=watch_permalink"><img
-                                src="images/about/2020/timestechieswebinar.png"/></a></p>
-                        <p class="price-month">Careers in Java - 25 years of the programming language</p>
-                        <p class="price-sub-month">Times Techies, TimesOfIndia (Oct, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="images/about/2020/timestechiesprint1.jpg"><img
-                                src="images/about/2020/timestechiesprint1.jpg"/></a></p>
-                        <p class="price-month">25 and still going strong, Java proves it obit writers wrong </p>
-                        <p class="price-sub-month">Times Techies, Times of India (July, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://timesofindia.indiatimes.com/india/25-and-still-going-strong-java-proves-its-obit-writers-wrong/articleshow/76852641.cms"><img
-                                src="images/about/2020/timestechiesonline1.png"/></a></p>
-                        <p class="price-month">25 and still going strong, Java proves it obit writers wrong </p>
-                        <p class="price-sub-month">Times of India, Online (July, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.facebook.com/watch/live/?v=413288486738459&ref=watch_permalink"><img
-                                src="images/about/2020/timestechieswebinar2.png"/></a></p>
-                        <p class="price-month">Careers in Java - 25 years of the programming language</p>
-                        <p class="price-sub-month">Times Techies, TimesOfIndia (Oct, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-
-
-
-
-
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://blogs.oracle.com/javamagazine/pattern-matching-for-instanceof-in-java-14"><img src="images/about/2020/pattern-matching-ins.png"></img></a></p>
-                        <p class="price-month">Article on Pattern Matching for instanceof</p>
-                        <p class="price-sub-month">Java Magazine (May, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.youtube.com/watch?v=z0XFtiZr9WI"><img src="images/about/2020/virtualjug.jpg"></img></a></p>
-                        <p class="price-month">Keeping pace with what's new in Java 14 and 15</p>
-                        <p class="price-sub-month">Virtual JUG (Aug, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://jdconf.splashthat.com"><img src="images/about/2020/jdconf.png"></img></a></p>
-                        <p class="price-month">Communities - Keynote on Day 3</p>
-                        <p class="price-sub-month">JDConf, Microsoft's first Java Conf (Oct, 2020)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <!-- /price-block --><!-- /price-block --><!-- /price-block --><!-- /price-block --><!-- /price-block --><!-- /price-block --><!-- /price-block --><!-- /price-block --><!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://jfuture.dev/"><img src="images/about/2019-jfuture.jpg"></img></a></p>
-                        <p class="price-month">Keynote on Java</p>
-                        <p class="price-sub-month">JFuture, Minsk, Belarus(Nov, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://twitter.com/Oraclejavamag/status/1187852611761909760"><img src="images/about/2019-OracleMagazine-TextBlocks.png"></img></a></p>
-                        <p class="price-month">Java Article in Oracle's Java Magazine</p>
-                        <p class="price-sub-month">Oracle Code One, San Francisco(Oct, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.youtube.com/watch?v=j9yJcFiKXJk"><img src="images/about/2019-OracleCodeOne-Community-keynote.png"></img></a></p>
-                        <p class="price-month">Java Champions Community Keynote at Oracle Code One</p>
-                        <p class="price-sub-month">Oracle Code One, San Francisco(Sep, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.youtube.com/watch?v=bnZDh-3P4FQ"><img src="images/about/2019-OracleCodeOne-mainkeynote.jfif"></img></a></p>
-                        <p class="price-month">Oracle's Keynote at Oracle Code One</p>
-                        <p class="price-sub-month">Oracle Code One, San Francisco(Sep, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.oracle.com/code-one/"><img src="images/about/2019-OracleCodeOne-sfo.jfif"></img></a></p>
-                        <p class="price-month">Fun path to Java 11 Developer Certifications</p>
-                        <p class="price-sub-month">Oracle Code One, San Francisco(Sep, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.womenwhocode.com/sf"><img src="images/about/2019-wwc-sfo-amber.jfif"></img></a></p>
-                        <p class="price-month">Project Amber in Java</p>
-                        <p class="price-sub-month">Women Who Code, San Francisco(Sep, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://asia.womenwhocode.dev/"><img src="images/about/2019-wwc-connect-singapore.png"></img></a></p>
-                        <p class="price-month">Project Amber in Java</p>
-                        <p class="price-sub-month">Women Who Code CONNECT ASIA Conference, Singapore (Aug, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.meetup.com/singajug/events/264101125/"><img src="images/about/2019-jug-singapore.jfif"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">Java User Group, Singapore(Aug, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="JetBrains.com"><img src="images/about/jetBrains-Hyd-2019.jpg"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">JetBrains Day, Hyderabad (June, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="JetBrains.com"><img src="images/about/JetBrainsDelhi-2-2019.jpg"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">JetBrains Day, Delhi (June, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="JetBrains.com"><img src="images/about/wwcode-bangalore-2019.jpg"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">WWCode Bangalore, VMWare (July, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="JetBrains.com"><img src="images/about/webinar-jdk12.jpg"></img></a></p>
-                        <p class="price-month">What's new in JDK 12</p>
-                        <p class="price-sub-month">Webinar with JetBrains (May, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="http://jbcnconf.com/2019"><img src="images/about/JBCN-2019.jpg"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">JBCN Conference, Barcelona (May, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.meetup.com/SVQJUG/"><img src="images/about/seville-jug-2019.jpg"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">Seville Java User Group, Spain (May, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://conference.c-sharpcorner.com/"><img src="images/about/c-sharp-2019.jpg"></img></a></p>
-                        <p class="price-month">What's new in Java 12</p>
-                        <p class="price-sub-month">C# Corner, New Delhi(Apr, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="techfluence.in/"><img src="images/about/techfluence-2019.jpg"></img></a></p>
-                        <p class="price-month">Uncovering Project Amber</p>
-                        <p class="price-sub-month">Techfluence, New Delhi(Mar, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/NSIT-delhi-2019.jpg"></img></p>
-                        <p class="price-month">Latest features in Java</p>
-                        <p class="price-sub-month">NSIT, New Delhi (Mar, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/NIT-trichy-2019.jpg"></img></p>
-                        <p class="price-month">Latest changes in Java</p>
-                        <p class="price-sub-month">Pragyan, NIT Trichy, India (Mar, 2019)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="http://eclipsedayindia.mybluemix.net/"><img src="images/about/banglore-eclipse-day.jpg"></img></a></p>
-                        <p class="price-month">Java 10, 11 - What the future holds</p>
-                        <p class="price-sub-month">Eclipse Day India, Bangalore (Sep, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="http://techtriveni.com/" target="_blank"><img src="images/about/tech-triveni-2018.jpg"></img></a></p>
-                        <p class="price-month">Java 11 and beyond</p>
-                        <p class="price-sub-month">Tech Triveni (Nov, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="http://krmangalam.edu.in/"><img src="images/about/krmangalam1.jpg"></img></a></p>
-                        <p class="price-month">Changing programming paradigms Workshop</p>
-                        <p class="price-sub-month">K R Mangalam University, Haryana (Sep, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.jbcnconf.com/2018/"><img src="images/about/jbcn-actual-2018.jpg"></img></a></p>
-                        <p class="price-month">Java 9, 10, 11 - What the future holds</p>
-                        <p class="price-sub-month">JBCN Conference, Barcelona, Spain (June, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">II
-                    <div class="top-part">
-                        <p class="plan-price"><a href="http://http://conference.c-sharpcorner.com/"><img src="images/about/c-sharp-actual.jpg"></img></a></p>
-                        <p class="price-month">Java 8, 9, 10 - What the future holds</p>
-                        <p class="price-sub-month">C# Annual Conference (Apr, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="http://www.techfluence.in"><img src="images/about/techfluence.jpg"></img></a></p>
-                        <p class="price-month">Java 8, 9, 10 - What the future holds</p>
-                        <p class="price-sub-month">Techfluence Conference (Mar, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.adobe.com/in/"><img src="images/about/adobe-touchstone.jpg"></img></a></p>
-                        <p class="price-month">Professional Certifications - Touchstone in Technology</p>
-                        <p class="price-sub-month">Adobe, Noida (Mar, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/bvicam-fdp-2018.jpeg"></img></p>
-                        <p class="price-month">Changing Programming Paradigms & Write a book</p>
-                        <p class="price-sub-month">Faculty Development Program, BVICAM (Jul, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/manav-rachna.jpg"></img></p>
-                        <p class="price-month">Latest Java trends & Application design</p>
-                        <p class="price-sub-month">Manav Rachna University (Mar, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/iit-delhi.jpg"></img></p>
-                        <p class="price-month">Write a book and live forever</p>
-                        <p class="price-sub-month">Women Entrepreneurship and Empowerment (WEE), IIT Delhi (Sep, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/bharti-vidyapeeth1.jpg"></img></p>
-                        <p class="price-month">Java Application design - solving real world problems</p>
-                        <p class="price-sub-month">Bharati Vidyapeeth College of Engineering (Sep, 2017)</p>
-
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/igdtu.jpg"></img></p>
-                        <p class="price-month">Hackathon Judge</p>
-                        <p class="price-sub-month">IG Delhi Technological University (Oct, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/91springboard-writebook.jpg"></img></p>
-                        <p class="price-month">Write a book and live forever</p>
-                        <p class="price-sub-month">Women Who Code (May, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/bharti-vidyapeeth.jpg"></img></p>
-                        <p class="price-month">Java Application design - solving real world problems</p>
-                        <p class="price-sub-month">Bharati Vidyapeeth College of Engineering (Sep, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/IIITD-hackathon.jpg"></img></p>
-                        <p class="price-month">Judge - Hackathon - CodeOff</p>
-                        <p class="price-sub-month">Indraprastha Institute of Information Technology, Delhi (Oct, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/write-a-book-nehruplace.jpg"></img></p>
-                        <p class="price-month">Write a book and live forever</p>
-                        <p class="price-sub-month">Women Who Code (Jul, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/wwc-adobe.jpg"></img></p>
-                        <p class="price-month">WWC Director starter Talk</p>
-                        <p class="price-sub-month">Adode, Noida (Mar, 2018)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-
-
-            <!-- ------------------------------- -->
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/delhi-jug-writebook.png"></img></p>
-                        <p class="price-month">Write a book and live forever</p>
-                        <p class="price-sub-month">Delhi Java user Group (Sep, 2017)</p>
-
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><img src="images/about/wwc-innov.jpg"></img></p>
-                        <p class="price-month">Women Who Code - Celebrating Women</p>
-                        <p class="price-sub-month">Panel Member, Women in Tech (Mar, 2017)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-
-            <div class="bgrid">
-                <div class="price-block">
-                    <div class="top-part">
-                        <p class="plan-price"><a href="https://www.meetup.com/Delhi-NCR-JUG/events/214730772/"><img src="images/about/delhijug-exception-webinar.png"></img></a></p>
-                        <p class="price-month">Webinar - Exception handling in Java 7</p>
-                        <p class="price-sub-month">Delhi Java User Group (Nov, 2014)</p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
-
-        </div> <!-- /pricing-tables -->
-    </div> <!-- /pricing-content -->
-
-
-    <div class="row section-intro">
-        <div class="col-twelve with-bottom-line">
-            <h1 width="100%">Invite</h1>
+      </a>
+      <a href="http://www.eJavaGuru.com/blog" target="_blank" class="blog-item">
+        <div class="blog-icon">✍️</div>
+        <div>
+          <div class="blog-item-title">eJavaGuru Blog — Java Certification Tips &amp; Tutorials</div>
+          <div class="blog-item-meta"><span>eJavaGuru.com</span><span>Ongoing</span></div>
         </div>
+      </a>
+      <!-- Add more blog posts here -->
     </div>
+  </div>
+</section>
 
-    <div class="row pricing-content">
-        <div class="pricing-tables block-1-3 group">
+<!-- ===== JETBRAINS ONLINE CONFERENCES ===== -->
+<section id="conferences" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">JetBrains</span>
+      <h2>Online Conferences</h2>
+      <p>Online conferences initiated and organised at JetBrains, bringing developers together from around the world.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-image">
+          <a href="https://www.youtube.com/channel/UC4ogdcPcIAOOMJktgBMhQnQ/" target="_blank">
+            <img src="images/about/2021/intellijideaconf2021.jpg" alt="IntelliJ IDEA Conf 2021">
+          </a>
+        </div>
+        <div class="card-body">
+          <div class="card-tag">JetBrains · 2021</div>
+          <div class="card-title">IntelliJ IDEA Conf 2021</div>
+          <div class="card-subtitle">Online conference celebrating IntelliJ IDEA and the developer community</div>
+          <div class="card-date">Feb 2021</div>
+        </div>
+      </div>
+      <!-- Add more JetBrains online conferences below -->
+    </div>
+    <p style="margin-top:20px; font-size:13px; color:var(--text-muted); text-align:center;">
+      ✏️ Add more JetBrains online conferences by editing the <code>#conferences</code> section in index.html
+    </p>
+  </div>
+</section>
 
+<!-- ===== LIVE STREAMS ===== -->
+<section id="livestreams" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">JetBrains</span>
+      <h2>Live Streams</h2>
+      <p>Live streams organised and hosted at JetBrains — interactive sessions with the global developer community.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/about/webinar-jdk12.jpg" alt="JDK 12 Live Webinar">
+        </div>
+        <div class="card-body">
+          <div class="card-tag">JetBrains Live · 2019</div>
+          <div class="card-title">What's New in JDK 12</div>
+          <div class="card-subtitle">Live webinar hosted with the JetBrains community</div>
+          <div class="card-date">May 2019</div>
+        </div>
+      </div>
+      <!-- Add more live streams below -->
+    </div>
+    <p style="margin-top:20px; font-size:13px; color:var(--text-muted); text-align:center;">
+      ✏️ Add more JetBrains live streams by editing the <code>#livestreams</code> section in index.html
+    </p>
+  </div>
+</section>
 
-            <div align="center" class="bgrid">
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
+<!-- ===== TECHNOLOGYGRIT ===== -->
+<section id="technologygrit" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Women Who Code</span>
+      <h2>TechnologyGrit Newsletter</h2>
+      <p>
+        Newsletters created while leading Women Who Code Delhi — inspiring women in technology with
+        stories, career tips, and community highlights.
+      </p>
+    </div>
+    <div class="newsletter-grid">
+      <div class="newsletter-card">
+        <div class="issue-num">Issue · 01</div>
+        <h3>TechnologyGrit — Issue 1</h3>
+        <p>Inspiring women in technology with community stories, career advice, and technical insights from the Delhi chapter.</p>
+        <div class="nl-date">Add date &amp; link</div>
+        <!-- <a href="#" class="nl-link">Read Newsletter →</a> -->
+      </div>
+      <div class="newsletter-card">
+        <div class="issue-num">Issue · 02</div>
+        <h3>TechnologyGrit — Issue 2</h3>
+        <p>Celebrating achievements of women in tech, diversity initiatives, and upcoming events from Women Who Code Delhi.</p>
+        <div class="nl-date">Add date &amp; link</div>
+      </div>
+      <div class="newsletter-card">
+        <div class="issue-num">Issue · 03</div>
+        <h3>TechnologyGrit — Issue 3</h3>
+        <p>Stories of persistence and success from women across the global technology community.</p>
+        <div class="nl-date">Add date &amp; link</div>
+      </div>
+    </div>
+    <p style="margin-top:20px; font-size:13px; color:var(--text-muted); text-align:center;">
+      ✏️ Replace the placeholder cards above with your actual TechnologyGrit newsletter issues and links.
+    </p>
+  </div>
+</section>
 
-            <!-- ------------------------------- -->
-            <div align="center" class="bgrid">
-                <div align="center" class="price-block">
-                    <div align="center" class="top-part">
-                        <p align="center" class="price-month">Email</p>
-                        <p align="center" class="price-month">mala.ejavaguru@gmail.com</p>
-                        <p align="center" class="price-month">to invite Mala Gupta for speaking assignments.
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- /price-block -->
-            <!-- ------------------------------- -->
+<!-- ===== CONTACT CTA ===== -->
+<section id="contact" class="cta-section">
+  <div class="container">
+    <h2>Invite Mala to Speak</h2>
+    <p>Available for conferences, workshops, webinars, and corporate events globally.</p>
+    <a href="mailto:mala.ejavaguru@gmail.com" class="btn btn-white">mala.ejavaguru@gmail.com</a>
+  </div>
+</section>
 
-            <div align="center" class="bgrid">
-            </div> <!-- /price-block -->
-
-
-        </div> <!-- /pricing-tables -->
-    </div> <!-- /pricing-content -->
-
-
-</section> <!-- /pricing -->
-
-
-<!-- footer
-================================================== -->
+<!-- ===== FOOTER ===== -->
 <footer>
-
-    <div class="footer-main">
-
-        <div class="row">
-
-            <div class="col-four tab-full mob-full footer-info">
-
-                <!-- <div class="footer-logo"></div> -->
-
-                <p>
-
-                    info.ejavaguru at gmail.com &nbsp;
-                </p>
-
-            </div> <!-- /footer-info -->
-
-            <div class="col-two tab-1-3 mob-1-2 site-links">
-
-
-                <h4>Publications </h4>
-
-                <ul>
-                    <li><a href="http://www.manning.com/gupta6">OCP Java SE 11 Programmer I Cert</a></li>
-                    <li><a href="http://www.manning.com/gupta3">OCA Java SE 8 Programmer I Cert</a></li>
-                    <li><a href="http://www.manning.com/gupta2">OCP Java SE 7 Programmer II Cert</a></li>
-                    <li><a href="http://www.manning.com/gupta">OCA Java SE 7 Programmer I Cert</a></li>
-                    </li>
-                </ul>
-
-            </div> <!-- /site-links -->
-
-
-            <div class="col-two tab-1-3 mob-1-2 social-links">
-
-                <h4>Social</h4>
-
-                <ul>
-                    <li><a href="http://www.twitter.com/eMalaGupta">Twitter</a></li>
-                    <li><a href="http://www.facebook.com/OCAJava8">Facebook - Book 'OCA Java SE 8'</a></li>
-                    <li><a href="http://www.facebook.com/OCPJava7">Facebook - Book 'OCP Java SE 7'</a></li>
-                    <li><a href="http://www.facebook.com/OCAJava7">Facebook - Book 'OCA Java SE 7'</a></li>
-                </ul>
-
-            </div> <!-- /social -->
-
-
-            <div class="col-four tab-1-3 mob-full footer-subscribe">
-
-                <h4>Subscribe</h4>
-
-                <p>Keep yourself updated. Subscribe to our newsletter.</p>
-
-                <div class="subscribe-form">
-
-                    <form id="mc-form" class="group" novalidate="true">
-
-                        <input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email &amp; hit enter" required="">
-
-                        <input type="submit" name="subscribe">
-
-                        <label for="mc-email" class="subscribe-message"></label>
-
-                    </form>
-
-                </div>
-
-            </div> <!-- /subscribe -- >
-
-
-
-	      </div>
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <div class="row">
-
-                <div class="col-twelve">
-                    <div class="copyright">
-                        <span>© 2016 Copyright eJavaGuru.com</span>
-                        <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
-                    </div>
-
-                    <div id="go-top" style="display: block;">
-                        <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-android-arrow-up"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Mala<span>Gupta</span></div>
+        <p class="footer-desc">
+          Java Champion · Developer Advocate at JetBrains · Author · Speaker · Mentor<br><br>
+          Founder of <a href="http://www.eJavaGuru.com">eJavaGuru.com</a> and
+          co-founder of <a href="http://www.kaagzevar.com">KaagZevar.com</a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Books</h4>
+        <ul>
+          <li><a href="http://www.manning.com/gupta6" target="_blank">OCP Java SE 11 I</a></li>
+          <li><a href="http://www.manning.com/gupta3" target="_blank">OCA Java SE 8 I</a></li>
+          <li><a href="http://www.manning.com/gupta2" target="_blank">OCP Java SE 7 II</a></li>
+          <li><a href="http://www.manning.com/gupta" target="_blank">OCA Java SE 7 I</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="http://www.twitter.com/eMalaGupta" target="_blank">Twitter</a></li>
+          <li><a href="http://www.eJavaGuru.com/blog" target="_blank">Blog</a></li>
+          <li><a href="https://www.jetbrains.com" target="_blank">JetBrains</a></li>
+          <li><a href="mailto:mala.ejavaguru@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://www.womenwhocode.com" target="_blank">Women Who Code</a></li>
+          <li><a href="http://www.kaagzevar.com" target="_blank">KaagZevar</a></li>
+          <li><a href="#technologygrit">TechnologyGrit</a></li>
+          <li><a href="#conferences">JetBrains Events</a></li>
+        </ul>
+      </div>
     </div>
-
-
+    <div class="footer-bottom">
+      <span>© 2024 Mala Gupta. All rights reserved.</span>
+      <span>Java Champion · Developer Advocate at JetBrains</span>
+    </div>
+  </div>
 </footer>
 
+<button id="back-top" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-<!-- Java Script
-================================================== -->
-<script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/jquery-migrate-1.2.1.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+<script>
+  const nav = document.getElementById('nav');
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  const backTop = document.getElementById('back-top');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 10);
+    backTop.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+</script>
 
 </body>
-
 </html>
